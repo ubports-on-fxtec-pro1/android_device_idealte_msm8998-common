@@ -22,7 +22,7 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/fxtec/msm8998-common/msm8998-common-vendor.mk)
+$(call inherit-product, vendor/idealte/msm8998-common/msm8998-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -41,7 +41,9 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    system
+    dtbo \
+    system \
+    vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -469,10 +471,6 @@ PRODUCT_PACKAGES += \
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2019-06-05
-
-# Verity
-PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
-$(call inherit-product, build/target/product/verity.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \

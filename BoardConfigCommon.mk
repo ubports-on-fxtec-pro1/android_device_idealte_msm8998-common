@@ -22,11 +22,11 @@
 # definition file).
 #
 
-PLATFORM_PATH := device/fxtec/msm8998-common
+PLATFORM_PATH := device/idealte/msm8998-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
-BOARD_VENDOR := fxtec
+BOARD_VENDOR := idealte
 
 # we are too big to fit in
 PRODUCT_SKIP_FINGERPRINT_FROM_FILE := true
@@ -58,11 +58,13 @@ TARGET_2ND_CPU_VARIANT := cortex-a73
 TARGET_USES_UEFI := true
 
 # Kernel
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 
-BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 
-BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.usbconfigfs=true 
-BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 
-BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
+BOARD_KERNEL_CMDLINE := \
+	console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc1b0000 \
+	androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 \
+	lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 \
+	service_locator.enable=1 swiotlb=2048 androidboot.configfs=true \
+	androidboot.usbcontroller=a800000.dwc3 \
+	firmware_class.path=/vendor/firmware_mnt/image loop.max_part=7
 #BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -72,9 +74,10 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/fxtec/msm8998
-TARGET_KERNEL_CONFIG := lineage_pro1_defconfig
+TARGET_KERNEL_SOURCE := kernel/idealte/msm8998
+TARGET_KERNEL_CONFIG := lineage-pro1_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+BOARD_KERNEL_SEPARATED_DTBO := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -222,6 +225,7 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 
 # HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(PLATFORM_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(PLATFORM_PATH)/compatibility_matrix.xml
 
@@ -245,10 +249,13 @@ BOARD_NFC_CHIPSET := pn553
 TARGET_USES_NQ_NFC := true
 
 # Partitions
-BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2998927360
+BOARD_BOOTIMAGE_PARTITION_SIZE := 0x04000000
+BOARD_DTBOIMG_PARTITION_SIZE := 0x0800000
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x04000000
+BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 51461959680
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 10737418240
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
@@ -323,8 +330,8 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Verified Boot
-#BOARD_AVB_ENABLE := true
-#BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
+BOARD_AVB_ENABLE := true
+BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # inherit from the proprietary version
--include vendor/fxtec/msm8998-common/BoardConfigVendor.mk
+-include vendor/idealte/msm8998-common/BoardConfigVendor.mk

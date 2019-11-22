@@ -250,42 +250,41 @@ vendor/lib/libchromatix_gc5025_preview.so
 vendor/lib/libchromatix_gc5025_snapshot.so
 vendor/lib/libchromatix_gc5025_zsl_preview.so
 vendor/lib/libchromatix_gc5025_zsl_video.so
-vendor/lib/libchromatix_imx363_1080p_preview_3a.so
-vendor/lib/libchromatix_imx363_1080p_video_3a.so
-vendor/lib/libchromatix_imx363_4k_preview_3a.so
-vendor/lib/libchromatix_imx363_4k_video_3a.so
 vendor/lib/libchromatix_imx363_common.so
 vendor/lib/libchromatix_imx363_cpp_hfr_120.so
-vendor/lib/libchromatix_imx363_cpp_hfr_240.so
 vendor/lib/libchromatix_imx363_cpp_hfr_60.so
+vendor/lib/libchromatix_imx363_cpp_hfr_90.so
+vendor/lib/libchromatix_imx363_cpp_liveshot_dual.so
 vendor/lib/libchromatix_imx363_cpp_liveshot.so
+vendor/lib/libchromatix_imx363_cpp_preview_dual.so
 vendor/lib/libchromatix_imx363_cpp_preview.so
 vendor/lib/libchromatix_imx363_cpp_snapshot_downscale.so
-vendor/lib/libchromatix_imx363_cpp_snapshot_hdr.so
+vendor/lib/libchromatix_imx363_cpp_snapshot_dual.so
 vendor/lib/libchromatix_imx363_cpp_snapshot.so
 vendor/lib/libchromatix_imx363_cpp_snapshot_upscale.so
-vendor/lib/libchromatix_imx363_cpp_video_4k.so
-vendor/lib/libchromatix_imx363_cpp_video_hdr.so
+vendor/lib/libchromatix_imx363_cpp_video_dual.so
 vendor/lib/libchromatix_imx363_cpp_video.so
 vendor/lib/libchromatix_imx363_default_preview_3a.so
+vendor/lib/libchromatix_imx363_default_preview_dual_3a.so
 vendor/lib/libchromatix_imx363_default_video_3a.so
-vendor/lib/libchromatix_imx363_default_video.so
+vendor/lib/libchromatix_imx363_default_video_dual_3a.so
 vendor/lib/libchromatix_imx363_fullsize_preview_3a.so
+vendor/lib/libchromatix_imx363_fullsize_preview_dual_3a.so
 vendor/lib/libchromatix_imx363_fullsize_video_3a.so
-vendor/lib/libchromatix_imx363_hdr_snapshot_3a.so
-vendor/lib/libchromatix_imx363_hdr_video_3a.so
+vendor/lib/libchromatix_imx363_fullsize_video_dual_3a.so
 vendor/lib/libchromatix_imx363_hfr_120_3a.so
 vendor/lib/libchromatix_imx363_hfr_120.so
-vendor/lib/libchromatix_imx363_hfr_240_3a.so
-vendor/lib/libchromatix_imx363_hfr_240.so
 vendor/lib/libchromatix_imx363_hfr_60_3a.so
 vendor/lib/libchromatix_imx363_hfr_60.so
+vendor/lib/libchromatix_imx363_hfr_90_3a.so
+vendor/lib/libchromatix_imx363_hfr_90.so
 vendor/lib/libchromatix_imx363_postproc.so
+vendor/lib/libchromatix_imx363_preview_dual.so
 vendor/lib/libchromatix_imx363_preview.so
-vendor/lib/libchromatix_imx363_snapshot_hdr.so
+vendor/lib/libchromatix_imx363_snapshot_dual.so
 vendor/lib/libchromatix_imx363_snapshot.so
-vendor/lib/libchromatix_imx363_video_4k.so
-vendor/lib/libchromatix_imx363_video_hdr.so
+vendor/lib/libchromatix_imx363_video_dual.so
+vendor/lib/libchromatix_imx363_video.so
 
 # Camera firmware
 system/etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
@@ -444,15 +443,6 @@ lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/qseecomd
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/firmware_mnt/image/widevine.b00
-vendor/firmware_mnt/image/widevine.b01
-vendor/firmware_mnt/image/widevine.b02
-vendor/firmware_mnt/image/widevine.b03
-vendor/firmware_mnt/image/widevine.b04
-vendor/firmware_mnt/image/widevine.b05
-vendor/firmware_mnt/image/widevine.b06
-vendor/firmware_mnt/image/widevine.b07
-vendor/firmware_mnt/image/widevine.mdt
 vendor/lib/libbase64.so
 vendor/lib/libcpion.so
 vendor/lib/libcppf.so
@@ -461,7 +451,6 @@ vendor/lib/libdrmtime.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/libGPreqcancel.so
 vendor/lib/libqisl.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/librpmb.so
 vendor/lib/libsecureui_svcsock.so
@@ -472,20 +461,16 @@ vendor/lib/libssd.so
 vendor/lib/libspl.so
 vendor/lib/libStDrvInt.so
 vendor/lib/libtzdrmgenprov.so
-vendor/lib/libtzplayready.so
 vendor/lib/libGPTEE_vendor.so
 vendor/lib/libQTEEConnector_vendor.so
 vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/mediadrm/libprmediadrmdecrypt.so
-vendor/lib/mediadrm/libprmediadrmplugin.so
 vendor/lib64/libbase64.so
 vendor/lib64/libcpion.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libGPreqcancel.so
-vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librpmb.so
@@ -497,14 +482,11 @@ vendor/lib64/libssd.so
 vendor/lib64/libspl.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
-vendor/lib64/libtzplayready.so
 vendor/lib64/libGPTEE_vendor.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/mediadrm/libprmediadrmdecrypt.so
-vendor/lib64/mediadrm/libprmediadrmplugin.so
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
@@ -753,12 +735,6 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# PLAYready
-vendor/lib/qcdrm/playready/lib/libprdrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/libtzplayready_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmdecrypt_customer.so
-vendor/lib/qcdrm/playready/lib/mediadrm/libprmediadrmplugin_customer.so
-
 # Postprocessing
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
@@ -996,11 +972,11 @@ vendor/lib64/libspcom.so
 vendor/bin/sensors.qti
 lib/libqmi_cci_system.so
 lib/libsdsprpc_system.so
-lib/libsensor_reg.so
+lib/libsensor_reg_system.so
 lib/libsensor1.so
 lib64/libqmi_cci_system.so
 lib64/libsdsprpc_system.so
-lib64/libsensor_reg.so
+lib64/libsensor_reg_system.so
 lib64/libsensor1.so
 vendor/lib/hw/activity_recognition.msm8998.so
 vendor/lib/libsdsprpc.so
