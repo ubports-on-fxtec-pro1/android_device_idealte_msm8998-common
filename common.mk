@@ -160,6 +160,10 @@ PRODUCT_PACKAGES += \
     camera.device@3.2-impl \
     Snap
 
+# Common init scripts
+PRODUCT_PACKAGES += \
+    init.qcom.rc
+
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0_vendor
@@ -296,7 +300,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.fxtec_msm8998
+    lineage.livedisplay@2.0-service.idealte_msm8998
 
 # Media
 PRODUCT_COPY_FILES += \
