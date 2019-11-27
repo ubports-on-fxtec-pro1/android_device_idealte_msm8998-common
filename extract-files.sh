@@ -31,9 +31,6 @@ if [ ! -f "$HELPER" ]; then
 fi
 . "$HELPER"
 
-# Default to NOT sanitizing the vendor folder before extraction
-CLEAN_VENDOR=false
-
 while [ "$1" != "" ]; do
     case $1 in
         -n | --no-cleanup )     CLEAN_VENDOR=false
@@ -59,11 +56,11 @@ extract "$MY_DIR"/proprietary-files-qc.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files-qc-perf.txt "$SRC" "$SECTION"
 extract "$MY_DIR"/proprietary-files.txt "$SRC" "$SECTION"
 
-if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
+if [ -s "$MY_DIR"/../../$DEVICE_VENDOR/$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false "$CLEAN_VENDOR"
 
-    extract "$MY_DIR"/../$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
+    extract "$MY_DIR"/../../$DEVICE_VENDOR/$DEVICE/proprietary-files.txt "$SRC" "$SECTION"
 fi
 
 COMMON_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE_COMMON"/proprietary

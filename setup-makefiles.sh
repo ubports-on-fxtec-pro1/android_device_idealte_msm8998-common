@@ -36,7 +36,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$LINEAGE_ROOT" true
 
 # Copyright headers and guards
-write_headers "cheeseburger dumpling"
+write_headers "pro1"
 
 # The standard blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true
@@ -78,7 +78,7 @@ EOF
 # We are done!
 write_footers
 
-if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
+if [ -s "$MY_DIR"/../../$DEVICE_VENDOR/$DEVICE/proprietary-files.txt ]; then
     # Reinitialize the helper for device
     INITIAL_COPYRIGHT_YEAR="$DEVICE_BRINGUP_YEAR"
     setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT" false
@@ -87,7 +87,7 @@ if [ -s "$MY_DIR"/../$DEVICE/proprietary-files.txt ]; then
     write_headers
 
     # The standard device blobs
-    write_makefiles "$MY_DIR"/../$DEVICE/proprietary-files.txt true
+    write_makefiles "$MY_DIR"/../../$DEVICE_VENDOR/$DEVICE/proprietary-files.txt true
 
     # We are done!
     write_footers
