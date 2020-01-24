@@ -1,4 +1,4 @@
-﻿on post-fs
+on post-fs
     chown system system /proc/ship_mode
     chown system system /dev/param
     chown system system /dev/block/mmcblk0p21
@@ -87,9 +87,6 @@ on post-fs-data
     mkdir /mnt/vendor/persist/hdcp  775 media mediadrm
 
     mkdir /data/vendor/misc/qsee/face/  0770 system system
-
-    #insmod /vendor/lib/modules/opchain.ko
-    #insmod /vendor/lib/modules-aging/opchain.ko
 
 #changhua add for fingerint
 on boot

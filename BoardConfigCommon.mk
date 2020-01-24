@@ -78,7 +78,6 @@ TARGET_KERNEL_SOURCE := kernel/idealte/msm8998
 TARGET_KERNEL_CONFIG := lineage-pro1_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 BOARD_KERNEL_SEPARATED_DTBO := true
-NEED_KERNEL_MODULE_SYSTEM := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true

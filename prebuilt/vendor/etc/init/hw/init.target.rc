@@ -121,14 +121,8 @@ on boot
    chown system system /sys/class/leds/led:torch_1/brightness
    chown system system /sys/class/leds/led:switch_0/brightness
 
-#install video modules
-   insmod /system/lib/modules/msm-vidc-vmem.ko
-   insmod /system/lib/modules/msm-vidc.ko
-   insmod /system/lib/modules/msm-vidc-dyn-gov.ko
-   insmod /system/lib/modules/msm-vidc-table-gov.ko
-
 #Load WLAN driver
-   insmod /vendor/lib/modules/qca_cld3_wlan.ko
+   insmod /vendor/lib/modules/wlan.ko
 
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
