@@ -233,9 +233,7 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Gatekeeper HAL
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
+# XXX: all blobs for now
 
 # GPS / Location
 PRODUCT_PACKAGES += \
@@ -298,11 +296,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/synaptics.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s3320.kl
 
 # Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service \
-    android.hardware.keymaster@4.0-impl \
-    android.hardware.keymaster@4.0-service
+# XXX: all blobs for now
 
 # Lights
 PRODUCT_PACKAGES += \
