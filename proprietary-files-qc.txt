@@ -117,7 +117,9 @@ vendor/lib/librecovery_updater_msm.so
 framework/com.qualcomm.qti.camera.jar
 vendor/lib/libmm-qcamera.so
 vendor/etc/camera/camera_config.xml
+vendor/etc/camera/gc5025_chromatix.xml
 vendor/etc/camera/imx350_chromatix.xml
+vendor/etc/camera/imx363_chromatix.xml
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/libhal_dbg.so
 vendor/lib/libmmcamera_interface.so
