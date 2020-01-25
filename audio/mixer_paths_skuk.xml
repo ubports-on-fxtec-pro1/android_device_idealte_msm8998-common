@@ -1911,8 +1911,8 @@
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
         <ctl name="CDC_IF RX0 MUX" value="SLIM RX0" />
         <ctl name="CDC_IF RX1 MUX" value="SLIM RX1" />
-        <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
-        <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX INT7_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX INT8_1 MIX1 INP0" value="RX0" />
         <ctl name="COMP7 Switch" value="1" />
         <ctl name="COMP8 Switch" value="1" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
