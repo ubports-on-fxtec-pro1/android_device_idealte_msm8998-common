@@ -1,3 +1,14 @@
+# Fingerprint firmware
+vendor/firmware/btlap64.b00
+vendor/firmware/btlap64.b01
+vendor/firmware/btlap64.b02
+vendor/firmware/btlap64.b03
+vendor/firmware/btlap64.b04
+vendor/firmware/btlap64.b05
+vendor/firmware/btlap64.b06
+vendor/firmware/btlap64.b07
+vendor/firmware/btlap64.mdt
+
 # Graphics firmware
 vendor/firmware/a530_gpmu.fw2
 vendor/firmware/a530_pfp.fw
