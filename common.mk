@@ -300,6 +300,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Keychars
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/keychars/Vendor_181d_Product_5018_Version_0001.kcm:$(TARGET_COPY_OUT_VENDOR)/usr/keychars/Vendor_181d_Product_5018_Version_0001.kcm
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/fpc1020.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/fpc1020.kl \
