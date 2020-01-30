@@ -120,6 +120,7 @@ vendor/etc/camera/camera_config.xml
 vendor/etc/camera/gc5025_chromatix.xml
 vendor/etc/camera/imx350_chromatix.xml
 vendor/etc/camera/imx363_chromatix.xml
+vendor/etc/camera/s5k4h7_chromatix.xml
 vendor/etc/scve/facereco/gModel.dat
 vendor/lib/libhal_dbg.so
 vendor/lib/libmmcamera_interface.so
@@ -153,6 +154,7 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_quadracfa.so
+vendor/lib/libmmcamera_s5k4h7yx.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -298,6 +300,28 @@ vendor/lib/libchromatix_imx363_snapshot_dual.so
 vendor/lib/libchromatix_imx363_snapshot.so
 vendor/lib/libchromatix_imx363_video_dual.so
 vendor/lib/libchromatix_imx363_video.so
+vendor/lib/libchromatix_s5k4h7_postproc.so
+vendor/lib/libchromatix_s5k4h7_common.so
+vendor/lib/libchromatix_s5k4h7_hfr_120_3a.so
+vendor/lib/libchromatix_s5k4h7_cpp_hfr_120.so
+vendor/lib/libchromatix_s5k4h7_hfr_120.so
+vendor/lib/libchromatix_s5k4h7_hfr_90_3a.so
+vendor/lib/libchromatix_s5k4h7_cpp_hfr_90.so
+vendor/lib/libchromatix_s5k4h7_hfr_90.so
+vendor/lib/libchromatix_s5k4h7_hfr_60_3a.so
+vendor/lib/libchromatix_s5k4h7_cpp_hfr_60.so
+vendor/lib/libchromatix_s5k4h7_hfr_60.so
+vendor/lib/libchromatix_s5k4h7_4k_preview_3a.so
+vendor/lib/libchromatix_s5k4h7_4k_video_3a.so
+vendor/lib/libchromatix_s5k4h7_default_preview_3a.so
+vendor/lib/libchromatix_s5k4h7_default_video_3a.so
+vendor/lib/libchromatix_s5k4h7_zsl_preview_3a.so
+vendor/lib/libchromatix_s5k4h7_zsl_video_3a.so
+vendor/lib/libchromatix_s5k4h7_cpp_liveshot.so
+vendor/lib/libchromatix_s5k4h7_cpp_video.so
+vendor/lib/libchromatix_s5k4h7_cpp_snapshot.so
+vendor/lib/libchromatix_s5k4h7_cpp_preview.so
+vendor/lib/libchromatix_s5k4h7_snapshot.so
 
 # Camera firmware
 system/etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
