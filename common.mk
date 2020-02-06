@@ -174,8 +174,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.device@1.0-impl \
-    camera.device@3.2-impl \
-    Snap
+    camera.device@3.2-impl
+#    Snap
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -186,10 +186,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0_vendor
 
 # Connectivity Engine support (CNE)
-PRODUCT_PACKAGES += \
-    cneapiclient \
-    com.quicinc.cne \
-    services-ext
+# PRODUCT_PACKAGES += \
+#     cneapiclient \
+#     com.quicinc.cne \
+#     services-ext
 
 # Display
 PRODUCT_PACKAGES += \
@@ -219,8 +219,8 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0_vendor
 
 # Doze
-PRODUCT_PACKAGES += \
-    Doze
+# PRODUCT_PACKAGES += \
+#     Doze
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -236,8 +236,8 @@ PRODUCT_COPY_FILES += \
 # Fingerprint sensor
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
-    fingerprintd \
-    FxTecPocketMode
+    fingerprintd
+#     FxTecPocketMode
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
@@ -281,11 +281,11 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,${LOCAL_PATH}/prebuilt/vendor,$(TARGET_COPY_OUT_VENDOR))
 
 # IFAA (Fingerprint support for Alipay)
-PRODUCT_PACKAGES += \
-    org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
+# PRODUCT_PACKAGES += \
+#     org.ifaa.android.manager
+#
+# PRODUCT_BOOT_JARS += \
+#     org.ifaa.android.manager
 
 # IPv6
 PRODUCT_PACKAGES += \
@@ -439,12 +439,12 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libprotobuf-cpp-full
 
-PRODUCT_PACKAGES += \
-    ims-ext-common \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+# PRODUCT_PACKAGES += \
+#     ims-ext-common \
+#     telephony-ext
+#
+# PRODUCT_BOOT_JARS += \
+#     telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -477,11 +477,11 @@ PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.fxtec_msm8998
 
 # Update engine
-PRODUCT_PACKAGES += \
-    brillo_update_payload \
-    update_engine \
-    update_engine_sideload \
-    update_verifier
+# PRODUCT_PACKAGES += \
+#     brillo_update_payload \
+#     update_engine \
+#     update_engine_sideload \
+#     update_verifier
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
     bootctrl.msm8998 \
@@ -525,15 +525,16 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    hostapd \
-    hostapd_cli \
-    libqsap_sdk \
-    libQWiFiSoftApCfg \
-    libwifi-hal-qcom \
-    wificond \
-    wpa_supplicant \
-    wpa_supplicant.conf \
     wifi-mac-generator
+#     hostapd \
+#     hostapd_cli \
+#     libqsap_sdk \
+#     libQWiFiSoftApCfg \
+#     libwifi-hal-qcom \
+#     wificond \
+#     wpa_supplicant \
+#     wpa_supplicant.conf \
+#     wifi-mac-generator
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/fstman.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/fstman.ini \
