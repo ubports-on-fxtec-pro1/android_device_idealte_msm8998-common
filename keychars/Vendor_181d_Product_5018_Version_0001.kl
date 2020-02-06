@@ -13,11 +13,7 @@
 # limitations under the License.
 
 #
-# Generic key layout file for full alphabetic US English PC style external keyboards.
-#
-# This file is intentionally very generic and is intended to support a broad range of keyboards.
-# Do not edit the generic key layout to support a specific keyboard; instead, create
-# a new key layout file with the required keyboard configuration.
+# F(x)tec Pro1 key layout for the English integrated keyboard
 #
 
 key 1     ESCAPE
@@ -192,8 +188,6 @@ key 169   CALL
 # key 170 "KEY_ISO"
 key 171   MUSIC
 key 172   HOME
-# key SYM oem add
-key 249   SYM
 key 173   REFRESH
 # key 174 "KEY_EXIT"
 # key 175 "KEY_MOVE"
@@ -234,7 +228,6 @@ key 208   MEDIA_FAST_FORWARD
 # key 210 "KEY_PRINT"
 # key 211 "KEY_HP"
 key 212   CAMERA
-key 528   FOCUS
 key 213   MUSIC
 # key 214 "KEY_QUESTION"
 key 215   ENVELOPE
@@ -249,6 +242,10 @@ key 217   SEARCH
 key 224   BRIGHTNESS_DOWN
 key 225   BRIGHTNESS_UP
 key 226   HEADSETHOOK
+
+# oem add
+key 249   FUNCTION	# oemr
+key 250   FUNCTION	# oeml
 
 key 256   BUTTON_1
 key 257   BUTTON_2
@@ -409,6 +406,10 @@ key 484   B                 FUNCTION
 
 key 522   STAR
 key 523   POUND
+
+# oem add
+key 528   FOCUS
+
 key 580   APP_SWITCH
 key 582   VOICE_ASSIST
 
